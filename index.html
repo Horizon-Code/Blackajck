@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blackjack for CodeWorks </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link type="text/css"rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="./js/functions.js"></script>
+  </head>
+<body>
+  <div id="header">
+      <div class="total">Total
+        <span id="dogecoins">mydogecoins</span>
+        <img class="logodogecoin" src="dogecoin.png" alt="coin" width="30" height="40">
+      </div>
+      <div class="place"><h4>Place your pet</h4>
+       <input type="number" id="bet" value="5" min="1" max="100">
+        <button id="maxbet" type="button" onclick="maxbet()">
+          MAX BET
+        </button>
+    </div>
+      <img class = "titledogecoin1" src="Dogecoin_Logo.png" alt="coin" width="100" height="125">
+      <h1 class="title">B&nbsp;L&nbsp;A&nbsp;C&nbsp;K&nbsp;J&nbsp;A&nbsp;C&nbsp;K</h1>
+      <img class = "titledogecoin2" src="Dogecoin_Logo.png" alt="coin" width="100" height="125">
+      <div id="message">Press Start</div>
+      <div id="start">
+        <button id="btnstart" onclick="Start()" class="glow-on-hover">
+         Start 
+        </button>
+     </div>
+    </div>
+  </div>
+    </div>
+  </div>
+<div id = "output">
+<div id= "positions"><br>
+ <h3 style="color: aliceblue;">Dealer:</h3> <span id = "dValue" style="font-size: 40px;color: aliceblue;"></span><div id= "dealer"></div>
+ <div id="myactions">
+  <button id="btnhold" type="button" onclick="cardAction('hold')" class="btn">hold</button>
+  <button id="btnhit" type="button" onclick="cardAction('hit')" class="btn">hit</button>
+  <button id="btndeal" type="button" onclick="dealNew()" class="btn">deal</button>
+</div>
+<h3 style="color: aliceblue;">Player:</h3> <span id = "pValue" style="font-size: 40px; color: aliceblue;"></span><div id= "player"></div>
+</div>
+
+</div>
+
+</body>
