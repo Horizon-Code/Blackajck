@@ -1,0 +1,314 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom ,
+    rgba(58, 58, 158, 0.4),
+    rgba(136, 136, 206, 1)
+  ),
+  url(https://images4.alphacoders.com/771/thumb-1920-771198.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 20% 75%;
+animation: mymove 9s infinite;
+}
+@keyframes mymove {
+  50% {background-position: center;}
+}
+
+.total{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 30px;
+  color:  white;
+  position: absolute;
+  margin-top: 20px;
+  margin-bottom: 0ch;
+}
+.logodogecoin{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin-top: -10px;;
+}
+.place{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 30px;
+  color:  white;
+  position: absolute;
+  margin-top: 80px;
+  margin-bottom: 0ch;
+}
+
+s
+#output{
+    font-size: 1.5rem;
+}
+
+.title{
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  
+}
+
+.titledogecoin1{
+    
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 1%;
+    animation: mynextmove 9s infinite;
+}
+@keyframes mynextmove {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+.titledogecoin2{
+    
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 1%;
+  animation: mynextnextmove 9s infinite;
+}
+@keyframes mynextnextmove {
+  0%   {left:0px; top:0px;}
+  25%  {left:-200px; top:0px;}
+  50%  {left:-200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+
+#maxbet{
+  position:relative;
+  display:inline-block;
+  margin-top:-66px;
+  margin-left: 90px;
+  width: 10rem;
+  background-color: red;
+  font-size: 15px;
+  border-radius: 50%;
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#ccac00;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+}
+#maxbet:hover{
+ box-shadow: rgb(94, 14, 141);
+
+}
+
+
+#dealer,
+#player{
+  height: 180px;
+  width: 500px;
+}
+
+#message{
+  font-family: Copperplate, Papyrus, fantasy;
+  color: white;
+   height: 7rem;
+   font-size:3rem;
+   text-align: center;
+   margin-top: 50px;
+   
+}
+#start{
+  font-family: Copperplate, Papyrus, fantasy;
+  text-align: center;
+}
+#btnmaxbet{
+  background-color: crimson;
+}
+#btndeal{
+  visibility: visible;
+  background-color: rgb(55, 53, 58);
+  border-radius: 50%;
+  width: 160px;
+  height: 80px;
+  font-size: 40px;
+}
+#btnhold{
+  background-color: rgb(92, 168, 15);
+  border-radius: 50%;
+  width: 160px;
+  height: 80px;
+  font-size: 40px;
+
+}
+#btnhit{
+  width: 160px;
+  height: 80px;
+  background-color: rgb(45, 17, 148);
+  border-radius: 50%;
+  font-size: 40px;
+
+}
+
+#btnstart{
+  background-color: rgb(7, 7, 7);
+}
+.btn{
+  border-radius: 5px;
+  padding: 8px 20px;
+  color:white;
+  display: inline-block;
+  text-align:center;
+  text-shadow:1px 1px #000;
+  font: normal 500 16px/1 "Calibri";
+}
+
+
+#myactions{
+  position: absolute;
+  margin-left: 50%;
+  
+
+
+}
+
+
+.clubs,
+.spades {
+  color: black;
+}
+.hearts,
+.diams {
+  color: red;
+}
+.hearts .color::after {
+  content: '\2665';
+}
+
+.diams .color::after {
+  content: '\2666';
+}
+
+.spades .color::after {
+  content: '\2660';
+}
+
+.clubs .color::after {
+  content: '\2663';
+}
+.icard {
+  height: 10rem;
+  width: 6.6rem;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 100px;
+  font-family: 'Lato';
+}
+#cover{
+  border: 0.2rem;
+  height: 10rem;
+  width: 6.6rem;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: grey;
+  position: absolute;
+  border: 1px solid black;
+
+}
+
+.top-card {
+  font-size: 30px;
+  line-height: 20px;
+  left: 2px;
+  top: 2px;
+}
+
+.content-card {
+  text-align: center;
+  font-size: 70px;
+}
+
+.bottom-card {
+  font-size: 30px;
+  line-height: 20px;
+  right: 2px;
+  bottom: 2px;
+  transform: rotate(-180deg);
+}
+.glow-on-hover{
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
